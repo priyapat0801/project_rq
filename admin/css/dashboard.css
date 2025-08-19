@@ -142,3 +142,11 @@ p {
     outline: none;
     color: #DFF4E1;
 }
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+    align-items: stretch;
+    /* ให้สูงเท่ากัน */
+}
