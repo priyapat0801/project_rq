@@ -2,7 +2,8 @@
 // manage_users.php
 declare(strict_types=1);
 session_start();
-require_once 'db_connect.php';
+require_once '../db_connect.php';
+
 
 // 1) Guard: superadmin เท่านั้น
 if (!isset($_SESSION['user_id']) || (int)($_SESSION['role_id'] ?? 0) !== 1) {
